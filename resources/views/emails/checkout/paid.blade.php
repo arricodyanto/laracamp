@@ -1,9 +1,9 @@
 <x-mail::message>
-# Register Camp: {{$checkout->Camp->title}}
+# Your Transaction Has Been Confirmed
 
 Hi {{$checkout->User->name}}
 <br/>
-Thank you for register on <b>{{$checkout->Camp->title}}</b>, please see payment instruction by click the button below.
+Your transaction has been confirmed, now you can enjoy the benefits of <b>{{$checkout->Camp->title}}</b> camp.
 
 <x-mail::button :url="route('user.dashboard')">
 Go to Dashboard
